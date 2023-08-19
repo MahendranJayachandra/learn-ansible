@@ -1,5 +1,6 @@
 - name: implement loops in ansible
   hosts: all
+  become: yes
   tasks:
     - name: loop to print list of fruits
       ansible.builtin.debug:
