@@ -4,17 +4,17 @@
   tasks:
   - name: loop to print list of fruits
     ansible.builtin.debug:
-      msg: "The fruit name is {{item}}"
+      msg: "The fruit name is {{ item }}"
       loop:
         - apple
         - Orange
         - pineapple
         - jackfruit
-        - bananana
+        - banana
 
   - name: print fruits along with quantities
     ansible.builtin.debug:
       msg: "The fruit name is {{item.name}}. quantity is {{item.quantity}}"
       loop:
         - name:apple,quantity:100
-        - name:orange,quantity:200
+        - name:orange,quantity:200  
