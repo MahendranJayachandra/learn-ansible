@@ -1,0 +1,5 @@
+- name: learn defaults
+  hosts: all
+  tasks:
+    ansible.builtin.debug:
+      msg: "My name is {{name}}"
