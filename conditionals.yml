@@ -11,5 +11,5 @@
   - name: print hello universe based on the condition
     ansible.builtin.debug:
       msg: hello universe
-    when: i >= 10
+    when: i > 10
 
