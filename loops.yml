@@ -5,20 +5,16 @@
     - name: loop to print list of fruits
       ansible.builtin.debug:
         msg: "The fruit name is {{item}}"
-      loop:
+        loop:
         - apple
         - Orange
         - pineapple
         - jackfruit
-        - banana
+        - bananana
 
-    - name: loop to print list of fruits with quantities
-      hosts: all
-      become: yes
-      tasks:
-        - name: print fruits along with quantities
-          ansible.builtin.debug:
-            msg: "The fruit name is {{item.name}}. quantity is {{item.quantity}}"
-          loop:
-            - name:apple,quantity:100
-            - name:orange,quantity:200
+    - name: print fruits along with quantities
+      ansible.builtin.debug:
+        msg: "The fruit name is {{item.name}}. quantity is {{item.quantity}}"
+        loop:
+          - name:apple,quantity:100
+          - name:orange,quantity:200
