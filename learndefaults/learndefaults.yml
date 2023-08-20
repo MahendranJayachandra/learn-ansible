@@ -1,0 +1,3 @@
+name: call learndefaults role
+hosts: all
+role: learndefaults
