@@ -1,0 +1,15 @@
+- name: implement conditionals in ansible
+  hosts: all
+  vars:
+    i: 10
+  tasks:
+  - name: print hello world based on the condition
+    ansible.builtin.debug:
+      msg: hello world
+    when i == 10
+
+  - name: print hello universe based on the condition
+    ansible.builtin.debug:
+      msg: hello universe
+    when i >= 10
+
