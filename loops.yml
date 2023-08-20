@@ -6,11 +6,11 @@
       ansible.builtin.debug:
         msg: "The fruit name is {{item}}"
         loop:
-         - apple
-         - Orange
-         - pineapple
-         - jackfruit
-         - bananana
+          - apple
+          - Orange
+          - pineapple
+          - jackfruit
+          - bananana
 
     - name: print fruits along with quantities
       ansible.builtin.debug:
