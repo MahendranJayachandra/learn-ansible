@@ -1,3 +1,6 @@
 - name: call learndefaults role
   hosts: all
-  role: learndefaults
+  tasks:
+    - name: include learn defaults role
+      ansible.builtin.include_role:
+        learndefaults
