@@ -1,0 +1,10 @@
+- name: register variable
+  hosts: all
+  tasks:
+    - name: register keyword used to store the function output in a variable
+      ansible.builtin.shell: uptime
+      register: output
+
+    - name: print the register variable
+      ansible.builtin.debug:
+        msg: {{output}} 
