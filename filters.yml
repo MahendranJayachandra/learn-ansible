@@ -1,7 +1,7 @@
 - name: understand filters
   host: all
   var:
-    name: {{"amanda","azur","union"}}
+    name: {"amanda","azur","union"}
   tasks:
   - name: Take the last name from the list - name
     ansible.builtin.debug: 
