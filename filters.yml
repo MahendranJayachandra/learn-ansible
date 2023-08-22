@@ -5,4 +5,4 @@
   tasks:
   - name: Take the last name from the list - name
     ansible.builtin.debug: 
-      msg: "{{name}}|'last'"
+      msg: "{{name}}"|'last'
