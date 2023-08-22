@@ -1,6 +1,6 @@
 - name: understand filters
   hosts: all
-  var:
+  vars:
     name: {"amanda","azur","union"}
   tasks:
   - name: Take the last name from the list - name
