@@ -1,5 +1,5 @@
 - name: understand filters
-  host: all
+  hosts: all
   var:
     name: {"amanda","azur","union"}
   tasks:
