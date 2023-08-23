@@ -6,3 +6,8 @@
   - name: Take the last name from the list - name
     ansible.builtin.debug: 
       msg: "{{name|last}}"
+
+  - name: to take the last value from uptime.stdout
+    ansible.builtin.shell: uptime
+    register: uptimevar
+    ansible.buitin.debug: {{uptimevar.stdout|last}}
